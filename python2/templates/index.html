@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>test_flask</title>
+</head>
+<body>
+    <form action='/result'>
+        <p>{{message}}</p>
+        <input type="text" name="field">
+        <button type="submit" formmethod="GET">偶奇判定</button>
+        <button type="submit" formmethod="POST">素数判定</button>
+        <button type="submit" formmethod="GET" formaction="/result/calculator">計算</button>
+    </form>
+</body>
+</html>
